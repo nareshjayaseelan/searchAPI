@@ -1,0 +1,29 @@
+Function Testing
+---------------------------------------------------------------------------
+Positive Testing
+	term=jack expected Result:-Jack Reacher
+	term=Jack+Reacher expected Result:-Jack
+	term=Jack.* expected Result:-Jack
+	term=Jack._ expected Result:-Jack
+	term=Jack. expected Result:-Jack
+	term=testing&country=USA expected Result:-Manual Testing IQ+
+	term=Jobs&country=IN&media=software expected Result:-Manual Testing IQ+
+	term=jobs&country=US&media=movie expected Result:-Manual Testing IQ+
+	term=jobs&country=UK&media=all expected Result:-Manual Testing IQ+
+	term=Ancient Indians&country=IN&media=all&limit=1 expected Result:-Manual Testing IQ+
+	term=Ancient Indians&country=IN&media=all&limit=50 expected Result:-Manual Testing IQ+
+	term=Ancient Indians&country=IN&media=all&limit=200 expected Result:-Manual Testing IQ+
+Negative Testig
+
+	term=Jack hindi expected Result:-Jack
+	term= expected Result:-
+	term=^#$*().* expected Result:-Jack
+	term=_ expected Result:-Jack
+	term=. expected Result:-Jack
+	term=testing&country=ZZZ expected Result:-Manual Testing IQ+
+	term=Jobs&country=IN&media=soft expected Result:-Manual Testing IQ+
+	term=jobs&country=US&media=mov expected Result:-Manual Testing IQ+
+	term=jobs&country=UK&media=all+of+the+above expected Result:-Manual Testing IQ+
+	term=Ancient Indians&country=IN&media=all&limit=-1 expected Result:-Manual Testing IQ+
+	term=Ancient Indians&country=IN&media=all&limit=0 expected Result:-Manual Testing IQ+
+	term=Ancient Indians&country=IN&media=all&limit=201 expected Result:-Manual Testing IQ+
